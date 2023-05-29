@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.375rem;
+    color: #333333;
+    background: rgb(248,197,141);
+    background: linear-gradient(0deg, rgba(248,197,141,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(248,197,141,1) 100%);
+} 
+
+header{
+    background: rgb(172,172,170);
+    background: linear-gradient(0deg, rgba(172,172,170,1) 6%, rgba(172,172,170,1) 12%, rgba(238,238,234,1) 42%);
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    z-index: 1;
+}
+
+.logo-nav{
+    width: 10rem;
+    float: left;
+    padding: 0px;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 25px;
+    padding: 28px 0;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #e4262f;
+    font-weight: bold;
+
+}
+
+nav ul li:hover{
+    border-top: solid 5px;
+    border-color: #e4262f;
+    transition: 0.1s;
+    
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.banner-div{
+    background-image: url(../img/bannerDiv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 270px;
+    display: flex;
+}
+
+.banner-div h2{
+    width: 100%;
+    font-size: 4rem;
+    color: #333333;
+    text-shadow: #333333;
+    text-align: center;
+    margin: 120px;
+}
+
+.nuestra-comp{
+    margin: 60px;
+    float: left;
+}
+
+.nuestra-comp h2{
+    float: left;
+    width: 50%;;
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nuestra-comp p{
+    position: relative;
+    margin-top: 25px;
+    float: left;
+    width: 50%;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+
+.img-nucomp{
+    display: block;
+    float: right;
+}
+
+.apoyo-kiosco{
+    margin: 60px;
+    float: right;
+}
+
+.apoyo-kiosco h2{
+    float: right;
+    width: 50%;
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.apoyo-kiosco p{
+    position: relative;
+    margin-top: 25px;
+    float: right;
+    width: 50%;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+
+.video-kiosco{
+    display: block;
+    float: left;
+    width: 576px;
+    height: 395px;
+}
+
+.logo-footer{
+    width: 400px;
+    float: left;
+    padding: 2rem;
+}
+
+.logo-twitter{
+    width: 100px;
+    float: right;
+    padding: 10px 0px 0px 0px;   
+}
+
+.logo-twitter:hover{
+    border-top: solid 5px;
+    border-color: #dcd5bc;
+    transition: 0.1s;
+    
+}
+.logo-insta{
+    width: 100px;
+    float: right;
+    padding: 7px 0px 0px 0px;
+}
+
+.logo-insta:hover{
+    border-top: solid 5px;
+    border-color: #dcd5bc;
+    transition: 0.1s;   
+}
+
+footer{
+    background-color: #822723;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+footer p{
+    color:#dcd5bc ;
+    text-align: center;
+    padding: 50px;
+}
+
+.galeria{
+    padding: 16px;
+}
+
+.lista-carrusel img{
+    width: 100%;
+    height: 350px;
+    padding: 10px;
+    display: block;
+}
+
+.lista-carrusel{
+    display: flex;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.lista-carrusel iframe{
+    width: 100%; 
+    height: 350px;
+    padding: 10px;
+    display: block;
+    }
+
+fieldset{
+    position: relative;
+    margin: 20px auto;
+    width: 40%;
+}
+
+fieldset legend{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+fieldset form{
+    padding: 10px;
+    text-align: center;
+}
+
+.caja-text{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.enviar-boton{
+    width: 30%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.borrar-boton{
+    width: 30%;
+    height: 50px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.compra-banner{
+    width: 100%;
+    height: 500px;
+}
+
+.rappi-logo{
+    width: 250px;
+    margin: 50px 0px 50px 30%;
+    display: inline-block;
+    
+}
+
+.pedidos-logo{
+    width: 250px;
+    margin: 50px 0px 50px 10px;
+    display: inline-block;
+}
+    
+/* colores
+.color1 { #e4262f }; rojo
+.color2 { #f8c58d }; crema
+.color3 { #822723 }; bordo
+.color4 { #ad7a56 }; marron claro
+.color5 { #dcd5bc }; gris  */ 
