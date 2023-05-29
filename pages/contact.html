@@ -4,103 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilo.css">
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <div class="menu">
-            <a href="./index.html"><img class="logo-nav" src="../img/logo-coca-cola.png" width=20% alt="logotipo"/></a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="./brands.html">MARCAS</a></li>
-                    <li><a href="./coctails.html">COKETAILS</a></li>
-                    <li><a href="./contact.html">CONTACTO</a></li>
-                    <li><a href="./buy-now.html">COMPRA YA</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../img/logo-coca-cola.png" alt="Coca Cola"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./brands.html">MARCAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./coctails.html">COKETAILS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./buy-now.html">COMPRA YA</a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="banner-div">
-            <h2>CONTACTATE CON NOSOTROS!</h2>
+            <h2>CONTACTA CON NOSOTROS!</h2>
         </div>
-        <fieldset><legend>Envíanos tu duda o sugerencia:</legend>
-            <br>
-            <form action="">
-                <div>
-                    <label for="nombre">Escribe tu nombre:</label>
-                    <input type="text" name="nombre" placeholder="Nombre">
+        <div class="container">
+            <form class="row g-3">
+                <div class="col-6">
+                    <label for="nameInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Escribe tu nombre">
                 </div>
-                <br>
-                <div>
-                    <label for="apellido">Escribe tu apellido:</label>
-                    <input type="text" name="apellido" placeholder="Apellido">
+                <div class="col-6">
+                    <label for="secondInput" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="secondInput" placeholder="Escribe tu apellido">
                 </div>
-                <br>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" required>
+                <div class="col-6">
+                    <label for="emailInput" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu email">
                 </div>
-                <br>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="number">
+                <div class="col-6">
+                    <label for="telInput" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="telInput" placeholder="Escribe tu telefono">
                 </div>
-                <br>
-                <div>
-                    <label for="nacionalidad">Pais de Nacimiento:</label>
-                    <select name="nacionalidad">
-                        <option value="arg">Argentina</option>
-                        <option value="uru">Uruguay</option>
-                        <option value="cl">Chile</option>
+                <div class="col-6">
+                    <label for="countrySelect" class="form-label">País</label>
+                    <select class="form-select" id="countrySelect">
+                        <option selected>Selecciona tu Provincia</option>
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">CABA</option>
+                        <option value="3">Catamarca</option>
+                        <option value="4">Chaco</option>
+                        <option value="5">Chubut</option>
+                        <option value="6">Córdoba</option>
+                        <option value="7">Corrientes</option>
+                        <option value="8">Entre Ríos</option>
+                        <option value="9">Formosa</option>
+                        <option value="10">Jujuy</option>
+                        <option value="11">La Pampa</option>
+                        <option value="12">La Rioja</option>
+                        <option value="13">Mendoza</option>
+                        <option value="14">Misiones</option>
+                        <option value="15">Neuquén</option>
+                        <option value="16">Rio Negro</option>
+                        <option value="17">Salta</option>
+                        <option value="18">San Juan</option>
+                        <option value="19">San Luis</option>
+                        <option value="20">Santa Cruz</option>
+                        <option value="21">Santa Fe</option>
+                        <option value="22">Santiago del Estero</option>
+                        <option value="23">Tierra del Fuego</option>
+                        <option value="24">Tucumán</option>
+                    </select>    
+                </div>
+                <div class="col-3">
+                    <label for="locInput" class="form-label">Localidad</label>
+                    <input type="text" class="form-control" id="locInput" placeholder="Escribe tu localidad">
+                </div>
+                <div class="col-3">
+                    <label for="cpInput" class="form-label">CP</label>
+                    <input type="number" class="form-control" id="cpInput" placeholder="Escribe tu CP">
+                </div>
+                <div class="col-6">
+                    <label for="genSelect" class="form-label">Género</label>
+                    <select class="form-select" id="genSelect">
+                        <option selected>Selecciona tu Género</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                        <option value="3">No Binario</option>
                     </select>
+                </div>    
+                <div class="col-6">
+                    <label for="dateInput" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="dateInput">
+                </div>      
+                <div class="col-12">
+                    <label for="textareaInput" class="form-label">Deja tu mensaje</label>
+                    <textarea class="form-control" id="textareaInput" placeholder="Escribe tu mensaje aqui..."></textarea>
                 </div>
-                <br>
-                <div>
-                    <label for="sexo">Género:
-                        <input type="radio" name="sexo" value="fem">Mujer
-                        <input type="radio" name="sexo" value="masc">Hombre
-                        <input type="radio" name="sexo" value="no_b">No binario
-                    </label>
+                <div class="col-12">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Acepto los Terminos y Condiciones, y Política de Privacidad</label>  
                 </div>
-                <br>
-                <div>
-                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
-                    <input type="date">
+                <div class="col-12 d-grid gap-2 col-6 mx-auto">
+                    <input class="btn btn-danger btn-lg" type="submit" value="Enviar">
+                    <input class="btn btn-danger btn-lg" type="reset" value="Borrar">
                 </div>
-                <br>
-                <div>
-                    <label for="comentarios">Deja tu mensaje</label><br>
-                    <textarea class="caja-text" name="comentarios" id="" cols="30" rows="10"></textarea>
-                </div>
-                <br>
-                <div>
-                    <input type="checkbox" name="condic">
-                    <label for="condic">Acepto los Términos y Condiciones y Política de Privacidad</label>
-                </div>
-                <br>
-                <div>
-                    <input class="enviar-boton" type="submit" value="Enviar Mensaje">
-                    <input class="borrar-boton" type="reset" value="Borrar">
-                </div>
-            
             </form>
-        </fieldset>
+        </div>
     </main>
-    <br>
     <footer>
         <a href="../index.html"><img class="logo-footer" src="../img/CC_Argentina.png" alt="CocaCola Argentina"/></a>
         <a href="https://twitter.com/CocaColaCoAR" target="_blank"><img class="logo-twitter" src="../img/twitterLogo.png" alt="Twitter"/></a>
         <a href="https://www.instagram.com/cocacolaar/" target="_blank"><img class="logo-insta" src="../img/instagramLogo.png" alt="Instagram"/></a>
-        <p>
-            © Coca Cola Company 2023
-        </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
